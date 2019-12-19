@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Variáveis */
+:root {
+    --cinza: #363636;
+    --verde: #08D10F;
+    --laranja: #FF7B0A;
+    --branco: #ffffff;
+    --fonte1: 'Barlow Condensed', sans-serif;
+    --fonte2: 'Quicksand', sans-serif;
+}
+header {
+    background-color: var(--cinza);
+    font-family: var(--fonte1);
+    display: flex;
+    flex-direction: column;
+}
+.painel_menu{
+    display: none;
+}
+
+/*Classe da nav*/
+.menu_global{
+    background-color: var(--verde);
+    width: 100%;
+}
+.menuzao_ttl {
+    display:flex; 
+    justify-content: center;
+    /*Ao formatar o espa�o do menuzao_ttl, apresenta a faixa na tela*/
+    width: 100%;
+    /*Defino que o menuzao_ttl ocupar� largura de 100% da tela*/
+    height: 60px;
+    /*Em height, digo 50px a partir da margem superior*/
+    background-color: var(--verde);
+    /*Incluo a cor para tornar este espa�o vis�vel*/
+    font-family: Arial;
+    /*Informo a fonte dos t�picos do menuzao_ttl*/
+    font-size: 25px;
+    font-weight: bold;
+    margin: auto;
+}
+.menuzao_ttl ul {
+    /*Formata��o da Unordered Lists-ul*/
+    list-style: none;
+    /*cicle, square, upper-roman, lower-alpha*/
+    font-family: var(--fonte1);
+    display: flex;
+    align-items: center;
+}
+.logotipo_fri .logotipo_header{
+    width: 300px;
+}
+.menuzao_ttl ul li {
+    /*Formatando cada li dentro da ul principal*/
+    width: 150px;
+    /*Distancia de cada elemento li principal*/
+    float: left;
+    /*Se posicionar os links mudam de lugar */
+    /* position: relative;
+			letter-spacing: 2px;
+			top: 10px; */
+    /*mostra espa�o em primeiro sub item*/
+}
+.menuzao_ttl a {
+    /*Formatando os links. Os li sub-itens com links*/
+    padding: 15px;
+    /*Espa�amento entre Item e seu sub-item*/
+    text-decoration: none;
+    /*overline, line-through, underline, underline overline*/
+    text-align: center;
+    /*Esquerda text links*/
+    background-color: var(--verde);
+    /*Cor de fundo*/
+    color: var(--cinza);
+    /*Cor fonte*/
+    margin-right: 50px;
+}
+.menuzao_ttl ul ul {
+    /*Formatanto cada ul dentro da ul principal*/
+    position: absolute;
+    visibility: hidden;
+    /*Escondemos as ul da ul principal, hidden=escondido*/
+}
+.menuzao_ttl ul li:hover ul {
+    /*Retorna itens acima ao passar o mouse. Afeta Ul interna*/
+    visibility: visible;
+}
+.menuzao_ttl a:hover {
+    /*Alterar o fundo do item no momento do hover acima. Quando o item aparecer*/
+    background-color: var(c);
+    color: var(--branco);
+    background-color: rgb(36, 182, 85);
+}
+.menuzao_ttl ul ul li {
+    /*sub-item*/
+    float: none;
+    border-bottom: #ccc solid 1px;
+    /*bordas dos itens*/
+}
+.menuzao_ttl ul ul li a {
+    background-color: #08D10F; 
+}
+/* Em 8:51 parei aqui */
+
+label[for="btt_menu"] {
+    /*Formatando label=simbolo ou r�tulo*/
+    margin-left: 20px;
+    margin-top: 50px;
+    padding: 5px;
+    background-color: var(--cinza);
+    color: var(--branco);
+    font-family: "Arial";
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+#btt_menu {
+    /*Tornando o checkbox invisivel*/
+    display: none;
+}
+label[for="btt_menu"] {
+    /*O botao que chama o menuzao_ttl fica oculto*/
+    display: none;
+}
+.menuzao_2 {
+    width: 200px;
+    display: flex;
+    /* background-color: #FF7B0A; */
+    /* padding-top: 10px; */
+    padding-left: 200px;
+    padding-top: 10px;
+}
+
+.menuzao_2 li{display: flex;
+justify-content: flex-end;}
+
+.menuzao_2 a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--cinza);
+    padding: 6px 12px;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px 0px rgba(112, 112, 112, 1);
+    font-size: 22px;
+    font-weight: normal;
+}
+.menuzao_2 a:hover {
+    background-color: white;
+    color: var(--cinza);
+}
+.logotipo_fri{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logotipo_fri a{
+    display: none;
+}
+
+/* Footer logo */
+.logorodapeweb {
+width: 265px;
+margin-right: 130px;
+}
+.logorodapemob {
+display: none;
+}
+
+.logohmob {
+display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1169px) {
+
+    .menu_global{
+       height: 0px;
+       position: fixed;
+       margin-top: 28px;
+    }
+
+    .menuzao_1 .painel_menu{
+        background-color: rgba(37, 155, 41, 0.823);
+        margin-bottom: 2px;
+    }
+
+    .logotipo_header, .logotipo_fri{
+        padding-left: 50px;
+    }
+    /*Comportamento quando tela ficar menor*/
+    label[for="btt_menu"] {
+        /*O botao some apenas na tela grande*/
+        display: block;
+        margin-top: 0px;
+    }
+    #btt_menu:checked~.menuzao_ttl {
+        /*Quando checado tr�z o menuzao_ttl*/
+        margin-left: 0px;
+    }
+    .menuzao_ttl {
+        display:block;
+        width: 100%;
+        margin-top: 30px;
+        /* espa�amento do checkbox cm lista */
+        margin-left: -100%;
+        /*some da tela o menuzao_ttl*/
+        transition: all .5s;
+        /*anima�ao ao surgir o menuzao_ttl*/
+    }
+    .menuzao_ttl ul{
+        display: block;
+    }
+    .menuzao_ttl a{
+        display: block;
+        margin-right: 0px;
+    }
+    .menuzao_ttl ul li {
+        width: 100%;
+        float: none;
+    }
+    .menuzao_ttl ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+    .menuzao_ttl ul li:hover ul {
+        height: auto;
+        max-height: 200px;
+    }
+    .menuzao_2{
+        display: none !important;
+    }
+   
+    .logotipo_fri a{
+        display: block;
+        color: var(--branco);
+        text-decoration: none;
+        font-size: 25px;
+        background-color: var(--verde);
+        padding: 4px 6px;
+        border-radius: 5px;
+        box-shadow: 0px 3px 6px 0px rgba(112, 112, 112, 1);
+    }
+    .logotipo_fri{
+    margin-left: 100px;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+    header{
+        margin-top: 75px
+    }
+    .logotipo_header, .logotipo_fri{
+        padding-left: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

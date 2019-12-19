@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+* {
+margin: 0;
+padding: 0;
+}
+/* Variáveis */
+:root {
+--cinza: #363636;
+--verde: #08D10F;
+--laranja: #FF7B0A;
+--branco: #ffffff;
+--fonte1: 'Barlow Condensed', sans-serif;
+--fonte2: 'Quicksand', sans-serif;
+}
+
+/* Retiradomig */
+/* 
+
+header {
+background-color: var(--cinza);
+font-family: var(--fonte1);
+margin-top: 50px;
+}
+.navbar-container {
+background-color: var(--verde);
+box-shadow: 0px 2px 5px 0px rgba(72,72,72,0.74);
+height: 60px;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 1;
+}
+header img {
+width: 200px;
+}
+.logo {
+text-align: center;
+margin: auto;
+}
+.logo .logorodapeweb {
+width: 265px;
+}
+.menu {
+display: flex;
+justify-content: space-between;
+width: 700px;
+margin: auto;
+list-style: none;
+}
+.menu a:hover{
+    transition: 200ms;
+    border-bottom: 1.5px solid var(--branco);
+    padding-bottom: 3.5px;
+}
+.ativo{
+  border-bottom: 1.5px solid #000;
+  padding-bottom: 1.5px;
+} 
+.menu a {
+text-decoration: none;
+color: #363636;
+font-size: 25px;
+font-weight: bold;
+}
+.menu a:hover {
+color: white;
+}
+.menu2 a:hover {
+background-color: white;
+color: var(--cinza);
+}
+.navbar {
+display: flex;
+justify-content: space-between;
+height: 60px;
+width: 1200px;
+margin: auto;
+}
+.menu2 {
+width: 150px;
+display: flex;
+justify-content: space-between;
+margin-right: 120px;
+align-items: center;
+}
+.menu2 a {
+text-decoration: none;
+color: white;
+background-color: var(--cinza);
+padding: 6px 12px;
+border-radius: 5px;
+box-shadow: 0px 3px 6px 0px rgba(112, 112, 112, 1);
+font-size: 22px;
+} */
+footer {
+height: 200px;
+background-color: var(--cinza);
+display: flex;
+}
+.redes {
+display: flex;
+flex-direction: column;
+background: none;
+}
+.facebook img,
+.instagram img,
+.twitter img {
+width: 30px;
+margin-right: 10px;
+}
+.rodape-container {
+width: 1200px;
+display: flex;
+justify-content: space-between;
+margin: auto;
+align-items: center;
+}
+
+footer .logo .logorodapeweb{
+margin-right: 45px;
+}
+footer p {
+font-family: var(--fonte1);
+color: white;
+}
+.facebook,
+.instagram,
+.twitter {
+display: flex;
+align-items: center;
+text-decoration: none;
+color: black;
+margin-bottom: 20px;
+}
+/* Retiradomig */
+/* .logo button img {
+width: 35px;
+}
+.logo button {
+background: none;
+border: none;
+display: flex;
+display: none;
+}
+.logo a {
+text-decoration: none;
+color: white;
+background-color: var(--verde);
+padding: 4px 6px;
+font-size: 25px;
+border-radius: 5px;
+box-shadow: 0px 3px 6px 0px rgba(112, 112, 112, 1);
+display: none;
+}
+
+.logorodapemob {
+display: none;
+
+}
+
+.logoheaderweb {
+width: 140px;
+
+}
+
+.logohmob {
+display: none;
+} */
+
+.redes img:hover {
+opacity: 0.6;
+}
+.pHeader{
+    width: 180px;
+    font-size: 18px;
+    margin-left: -118px;
+}
+ul p{
+  width: 250px;
+  color: #363636;
+}
+ul i{
+  color: #363636;
+  margin-right: 128px;
+  margin-left: -100px;
+}
+

@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+* {
+margin: 0;
+padding: 0;
+}
+:root {
+    --cinza: #363636;
+    --verde: #08D10F;
+    --laranja: #FF7B0A;
+    --branco: #ffffff;
+    --fonte1: 'Barlow Condensed', sans-serif;
+    --fonte2: 'Quicksand', sans-serif;
+    }
+    
+.container-assunto1, .container-assunto2{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .container-assunto1 img, .container-assunto2 img{
+    width: 600px;
+    height: 450px;;
+    margin: auto;
+    }
+    .container-assunto1 h1{
+    text-align: center;
+    font-family: var(--font1);
+    width: 600px;
+    }
+    .container-assunto1 h2, .container-assunto2 h2{
+    text-align: center;
+    font-family: var(--font1);
+    width: 600px;
+    }
+    .container-assunto1 p, .container-assunto2 p {
+    text-align: center;
+    font-family: var(--fonte2);
+    }
+    .aboutTitle{
+      margin-bottom: 90px; 
+      font-size: 35px;
+    }
+    .divAboutTitle{
+      margin-bottom: 100px;
+    }
+    .depoimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    }
+    .depoimento img {
+    width: 400px;
+    padding-bottom: 30px;
+    }
+    .container-depoimento {
+    width: 1200px;
+    padding-bottom: 200px;
+    margin: auto;
+    }
+    .depoimento h3 {
+    text-align: center;
+    color: #256D1B;
+    font-family: var(--fonte2);
+    font-size: 35px;
+    }
+    .container-galeria {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    }
+    .direita-galeria {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    }
+    .direita-galeria img {
+    height: 350px;
+    }
+    .esquerda-galeria {
+    background-image: url(../img/bgesquerda.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100vh;
+    }
+    .container-galeria-texto h3 {
+    text-align: center;
+    font-family: var(--font2);
+    padding-bottom: 40px;
+    font-size: 50px;
+    }
+    .container-galeria img {
+    width: 550px;
+    }
+    
+    /* Responsivo página QUEM SOMOS */
+    @media (max-width: 1169px) {
+      .container-assunto1, 
+      .container-galeria {
+        width: 1000px;
+        }
+        .container-assunto1 h2,
+        .container-assunto2 h2,
+        .container-assunto1 h1, 
+        .container-assunto1 img{
+          width: 500px;
+        }
+         .depoimento img {
+          width: 400px;
+          padding-bottom: 30px;
+          }
+          .container-depoimento {
+          width: 1000px;
+          display: flex;
+          justify-content: center;
+          padding-bottom: 200px;
+          }
+            .container-galeria{
+              widows: 1000px;
+            }
+            .direita-galeria {
+            width: 400px;
+            }
+            .direita-galeria img
+           {
+            width: 430px;
+            height: 350px;
+            }
+            .esquerda-galeria {
+            width: 450px;
+            height: 100vh;
+            }
+      }
+    
+      @media(max-width: 767px) {
+        .container-assunto1, .container-assunto2{
+          width: 500px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; 
+          padding-bottom: 100px;
+          }
+          .container-assunto2{
+            flex-direction: column-reverse;
+          }
+        .container-assunto1 img, .container-assunto2 img{
+          padding-top: 50px;
+          padding-bottom: 30px;
+        }
+        .container-depoimento{
+          width: 500px;
+        }
+        .container-galeria{
+          width: 500px;
+          display: flex;
+          flex-direction: column;
+        }
+        .esquerda-galeria,
+        .direita-galeria img
+        {
+          width: 500px;
+          margin: auto;
+          margin-bottom: 50px;
+        }
+      }

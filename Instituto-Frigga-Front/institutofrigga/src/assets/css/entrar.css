@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+* {
+margin: 0;
+padding: 0;
+}
+:root {
+    --cinza: #363636;
+    --verde: #08D10F;
+    --laranja: #FF7B0A;
+    --branco: #ffffff;
+    --fonte1: 'Barlow Condensed', sans-serif;
+    --fonte2: 'Quicksand', sans-serif;
+    }
+    
+
+.container_login {
+    font-family: var(--fontbarlow);
+    display: flex;
+    justify-content: space-between;
+    max-width: 480px;
+    margin: auto;
+    padding: 41px 80px 100px 80px;
+  }
+  .esquerda_login,
+  .direita_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1;
+    font-family: var(--fonte1);
+    background-color: var(--branco);
+    border-radius: 6px;
+    border-radius: 6px;
+  }
+  .esquerda_login{
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+    width: 455px;
+  }
+  .direita_login{
+      width: 415px;
+  }
+  .form-control {
+    min-width: 280px;
+    font-size: 18px;
+  }
+  .input-group {
+    margin: 10px 0;
+  }
+  .form-control .input_login {
+    width: 100%;
+  }
+  .container_login .radio-group {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .container_login .radio-group label:nth-child(1) {
+    margin-right: 30px;
+  }
+  
+  
+  .direita_login {
+    padding-top: 30px;
+  }
+  
+  .container_login label {
+    font-size: 20px;
+    font-family: var(--fonte1);
+    padding-bottom: 10px;
+    display: block;
+  }
+  
+  .esquerda_login img {
+    width: 95px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  
+  #form_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .formulario_login label,
+  h2 {
+    text-align: center;
+    margin: auto;
+    font-family: var(--fonte1);
+    font-size: 35px;
+  }
+  
+  #form_cadastro {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn_login,
+  .btn_login2 {
+    font-size: 1em;
+    border-radius: 3px;
+    border: none;
+    background-color: var(--verde);
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 10px;
+    font-family: var(--fonte1);
+    margin-bottom: 35px;
+    margin-top: 20px;
+  }
+  
+  .btn_login2 {
+    margin-left: 95px;
+  }
+  #cadastrarBtn{
+      background-color: #363636;
+      color: white;
+      border-bottom-left-radius: 15px;
+  }
+  
+  .input_login {
+    padding: 7px;
+    margin: 10px 10px 0px 0px;
+    border: #3dca41 solid 1px;
+    border-radius: 4px;
+  }
+  .buttonsContainer{
+      margin-left: 105px;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .container_login {
+      display: flex;
+      flex-direction: column;
+      padding: 30px 15px 60px 15px;
+    }
+    .esquerda_login {
+      margin-right: 0px;
+      margin-bottom: 20px;
+      padding: 30px 0;
+    }
+  }
+  @media screen and (max-width: 768px){
+      body{
+          margin-top: -76px;
+      }
+  }

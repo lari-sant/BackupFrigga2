@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+* {
+margin: 0;
+padding: 0;
+}
+:root {
+  --cinza: #363636;
+  --verde: #08D10F;
+  --laranja: #FF7B0A;
+  --branco: #ffffff;
+  --fonte1: 'Barlow Condensed', sans-serif;
+  --fonte2: 'Quicksand', sans-serif;
+  }
+.card_produtoisa img,
+.card_receitas_lari img{
+max-width: 352px;
+min-width: 352px;
+max-height: 280px;
+min-height: 280px;
+}
+.banner {
+    background-image: url(../img/BANNER1.jpg);
+    height: 650px;
+    width: 100%;
+    background-size: cover;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .titulos{
+      display: flex;
+      width: 1200px;
+      margin: auto;
+      justify-content: space-between;
+  }
+  .titulos h1{
+      margin-right: 240px;
+  }
+  .titulos h2{
+      margin-left: 148px;
+      align-self: flex-end;
+      font-size: 30px;
+  
+  }
+  .bannerTitle{
+      font-family: var(--fonte1);
+      font-size: 60px;
+      color: white;
+      line-height: 1.8;
+      margin-left: 20px;
+      word-spacing: 10px;
+      font-weight: bold;
+      margin-bottom: 90px;
+  }
+  .banner-txt{
+      font-family: var(--fonte2);
+      font-size: 35px;
+      color: #003D02;
+      line-height: 1.8;
+      margin-left: 20px;
+      word-spacing: 10px;
+      font-weight: bold;
+  }
+  .banner a{
+    font-family: var(--fonte2);
+      font-size: 55px;
+      line-height: 1.8;
+      margin-left: 40px;
+      word-spacing: 8px;
+      color: white;
+      text-decoration: none;
+      align-self: center;
+      margin-top: 65px;
+      margin-right: 350px;
+  }
+  .banner a:hover{
+    color: black;
+    font-size: 48px;
+  }
+
+  .container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 1200px;
+  }
+  .categorias p{
+    margin-bottom: 15px;
+  }
+  .container-produtos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 750px;
+  }
+  .card-produto {
+  height: 350px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px 0px rgba(112, 112, 112, 1);
+  }
+  
+  .nav-p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-family: var(--fonte1);
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px 0px rgb(206, 193, 206);
+  margin-top: -4px;
+  
+  }
+  .nav-p-isa{
+    margin-bottom: 40px;
+  }
+  
+  .nav-p p {
+  font-size: 20px;
+  }
+  
+  .nav-p a {
+  text-decoration: none;
+  color: var(--cinza);
+  background-color: var(--verde);
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-family: var(--fonte1);
+  box-shadow: 0px 1px 3px 0px rgba(112, 112, 112, 1);
+  }
+  
+  .nav-p a:hover {
+  background-color: #006D03;
+  color: #FFFFFF;
+  }
+  
+  .btn-seemore {
+  text-decoration: none;
+  color: #121212;
+  font-family: var(--fonte1);
+  margin-top:20px;
+  margin-bottom:20px;
+  }
+  
+  .btn-seemore a {
+  background-color: #363636;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px 0px rgba(112, 112, 112, 1);
+  padding: 5px 25px;
+  color: WHITE;
+  }
+  
+  .btn-seemore a:hover {
+  background-color: var(--verde);
+  color: #363636;
+  }
+  
+  .receitas {
+  background-color: white;
+  padding: 10px 15px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  }
+  .receitas::after{  
+    width:200px;   
+    height:40px;   
+    background:#ff0000;
+    z-index: 0;
+  }
+  .receitas h2 {
+  margin-bottom: 5px;
+  font-family: var(--fonte1);
+  }
+  .card-receita img:hover {
+  opacity: 0.8;
+  }
+  .container a {
+  text-decoration: none;
+  font-family: arial;
+  }
+  h1 {
+  margin-top: 5px;
+  font-size: 45px;
+  text-align: center;
+  font-family: var(--fonte1);
+  }
+  .position {
+  position: relative;
+  top: -63px;
+  color: white;
+  font-family: arial;
+  padding:20px;
+  background-color: rgba(0,0,0,0.6) ;
+  }
+   .position::after{
+       content:"";
+       width:200px;   
+       height:40px;   
+       background:#ff0000;
+  } 
+  /* Fim do main by Gus */
+  
+
+
+
+
+  /* Media Queries - HOME */
+  @media(max-width:1169px) {
+  /*  START Header responsivo para Tablet */
+  .banner-txt{
+      display: none;
+  }
+  .titulos{
+      width: 768px;
+  }
+  .titulos h2{
+      display: none;
+  }
+  .titulos h1{
+      margin:  auto;
+  }
+
+
+/* Retiradomig */
+  /* .navbar {
+  width: 100vw;
+  box-shadow: 0px 2px 5px 0px rgba(72,72,72,0.74);
+  }
+  .menu2 a {
+  margin-right: 15px;
+  }
+  .menu2 {
+  margin-left: 30px;
+  width: 70px;
+  }
+  .menu {
+  margin-left: 60px;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+  .banner {
+  background-image: url(../img/banner2mob.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  top: 200;
+  height: 500px;
+  }
+  .rodape-container {
+  width: 80vw;
+  }
+
+  /* END Header responsivo para Tablet */
+  .container {
+  width: 90vw;
+  flex-direction: column-reverse;
+  align-items: center;
+  }
+  .container-produtos {
+  width: 450px;
+  }
+  .rodape-container {
+  width: 80vw;
+  }
+  .receitas {
+  width: 250px;
+  }
+  .btn-seemore {
+  margin: auto;
+  margin-top: 30px;
+  }
+  .btn-seemore a {
+  margin-top: -20px;
+  }
+  .card-produto {
+  width: 450px;
+  }
+  .card-produto img {
+  width: 450px;
+  height: 280px;
+  }
+  /* main e rodape Tablet */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Media Queries SMART */
+  @media(max-width: 767px) {
+    /* Retiradomig */
+  /* .navbar-container {
+  display: none;
+  } */
+  .banner a{
+    display: none;
+  }
+  .bannerTitle{
+    display: none;
+  }
+  main{
+      margin-top: 75px;
+  }
+  /* Retiradomig */
+  /* header{
+      margin-top: 0px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      box-shadow: 0px 2px 5px 0px rgba(72,72,72,0.74);
+      z-index: 1;
+  } */
+  .titulos{
+      width: 369px;
+  }
+  .titulos h2{
+      display: none;
+  }
+  .titulos h1{
+      margin-top: 10px;
+      margin-bottom: -20px;
+  }
+  .banner-txt{
+      display: none;
+  }
+  .banner {
+  height: 220px;
+  margin-top: 83px;
+  }
+  .card-produto {
+  height: 200px;
+  }
+  .card-produto img {
+  width: 250px;
+  height: 140px;
+  }
+  
+  .card-receita img {
+    width: 250px;
+    height: 200px;
+  }
+  .container-produtos {
+  width: 250px;
+  }
+  /* Retiradomig */
+  /* .logo button a {
+  align-self: center;
+  }
+  .logo button {
+  display: block;
+  display: flex;
+  color: white;
+  }
+  .logo button img{
+      width: 25px;
+  }
+  .logo a {
+  display: block;
+  align-self: center;
+  font-size: 22px;
+  }
+  .logo {
+  display: flex;
+  justify-content: space-around;
+  }
+  .logo,
+  .logorodapeweb {
+  width: 120px;
+  }
+  .logo,
+  .logorodapemob {
+  width: 60px;
+  } 
+  .botao-menu {
+  align-items: center;
+  color: white;
+  }
+  
+  button p {
+  margin-left: 5px;
+  font-family: var(--fonte1);
+  font-size: 20px;
+  }
+  */
+  .rodape-container {
+  width: 250PX;
+  }
+
+  /* Retiradomig */
+  /* .logorodapemob {
+    display: block;
+    width: 40px;
+    height: 108px;
+    margin-right: 72px;
+  }
+  .logorodapeweb {
+  display: none;
+  }
+  .logohmob {
+  display: block;
+  margin: 0px 35px
+  }
+  header img {
+  width: 211px;
+  } */
+  h1 {
+  font-size: 30px;
+  }
+  .nav-p {
+  padding: 5px 4px;
+  }
+  .rodape-container {
+  width: 450px;
+  }
+  .banner {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  top: 0;
+  }
+  .card-produto {
+  width: 250px;
+  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .container_geral {
+    display: flex;
+    flex-direction: column;
+   }
+    .isa-produtos {
+      width: 1200px;
+      font-size: 37px;
+      margin-bottom: 30px;
+    }
+    .categorias{
+      width: 1200px;
+      display: flex;
+      justify-content: space-around;
+    }
+    .container-categorias {
+    background-color: white;
+    width: 1200px;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px; 
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    border-bottom-color: #d3d3d3;
+    padding-bottom: 45px;
+    }
+    .container-categorias h2{
+      margin-bottom: 15px;
+    }
+    .bar_bar{
+      width: 100px;
+      margin: auto;
+      border: solid #000 0.5px;
+      text-align: center;
+    }
+    .align_bar{
+      display: flex;
+      flex-direction: column-reverse;
+      margin-bottom: 15px;  
+    }
+  /* Categorias produtos e receitas */
+    .categ_1, .categ_2, .categ_3, .categ_4, 
+    .categ_5, .categ_6, .categ_7, .categ_8{
+      width: 200px; 
+      height: 200px;
+      border-radius: 100%;
+      background-size: 100%;
+      background-position: center; /*Direção do zoom do centro para fora*/
+      cursor: pointer;
+      transition: background-size 0.2s ease-in;
+      -moz-transition: background-size 0.2s ease-in;
+      -ms-transition: background-size 0.2s ease-in;
+      -o-transition: background-size 0.2s ease-in; 
+      -webkit-transition: background-size 0.2s ease-out;
+    }
+    
+    .categ_1:hover, .categ_2:hover, .categ_3:hover, .categ_4:hover,
+    .categ_5:hover, .categ_6:hover, .categ_7:hover, .categ_8:hover{
+    background-size: 120%;  
+    opacity: 0.8;  
+  }
+  .categ_1{ background-image: url(../img/frutas.png);  }
+  .categ_2{ background-image: url(../img/abacaxi.png); }
+  .categ_3{ background-image: url(../img/orta.png);    }
+  .categ_4{ background-image: url(../img/cenouras.png);}
+  
+  .categ_5{ background-image: url(../img/massas.png);  }
+  .categ_6{ background-image: url(../img/sopa.png); }
+  .categ_7{ background-image: url(../img/frutas.png);    }
+  .categ_8{ background-image: url(../img/fruit.png);}
+  
+   /* Aplicado em receitas */
+ 
+   .categ img:hover,
+   .categ_mobile img:hover{
+     opacity: 0.8;
+   }
+   /* / aplicar padrao acima */
+ 
+  /*incluido miguel /*esta classe foi adicionada e colocada junto a container produtos no html*/
+   .container-produtos-isa{ 
+     width: 1200px;
+     margin: auto;
+   }
+   .container-produtos{ 
+   margin-top: 25px;
+   }
+   .container_mobile, .categorias_mobile, .categ_mobile{
+     display: none ;
+   }
+   /*isabella, fim */
+
+   @media(max-width: 1169px){
+    .container-categorias{
+      width: 900px;
+    }
+    .categorias{
+      width: 850px;  
+    }
+    .container-produtos-isa{
+      width: 850px;
+      justify-content: space-around;
+    }
+  }
+
+  /*css Isabella, responsivo mobile produtos*/
+  @media(max-width: 767px){
+  .container_geral{
+    flex-direction: column;
+  }
+  .container_mobile, .categorias_mobile, .categ_mobile{
+  display: flex ;
+  }
+  .container_mobile{
+  background-color: white;
+  margin: 20px 50px;
+  padding: 20px;
+  width: 450px;
+  height: 200px;
+  }  
+  .categ_mobile {
+    padding-top: 20px;
+    display: block;
+    margin: 8px;
+    margin-top: 30px;
+  }  
+  .categ_mobile p{
+    text-align: center;
+    font-size: 18px;
+  }
+  .container-categorias{
+    display: none;
+  }
+
+  .container-produtos{
+    width: 260px;
+    margin: auto;
+  }
+
+  .card_produto-isa{
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .categ_mobile img{
+    width: 100px;
+  }
+  .categ_mobile h2 p{
+  font-size: 1.5em;
+  padding-top: 30px;
+      }
+  }
+  /*mobile Isabella, fim*/
+  
+   
+   

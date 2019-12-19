@@ -1,0 +1,19 @@
+        <div className="profile_dados">
+            <form method="POST" id="form_dados">
+              <label>Nome
+                        <input type="text" placeholder="Digite seu nome..." name="nome" aria-label="digitar nome"
+                  required />
+              </label>
+              <label>Celular
+                        <input type="tel" placeholder="Digite seu telefone..." name="telefone"
+                  aria-label="digitar telefone" required />
+              </label>
+              <label>Email
+                        <input type="email" placeholder="Digite seu email..." name="email" aria-label="digitar email"
+                  required />
+              </label><br />
+              <div>
+                <button type="submit" className="btn_editar_perfil" alt="botao editar perfil">Editar Perfil</button>
+              </div>
+            </form>
+          </div>

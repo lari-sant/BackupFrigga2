@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+* {
+margin: 0;
+padding: 0;
+}
+:root {
+    --cinza: #363636;
+    --verde: #08D10F;
+    --laranja: #FF7B0A;
+    --branco: #ffffff;
+    --fonte1: 'Barlow Condensed', sans-serif;
+    --fonte2: 'Quicksand', sans-serif;
+    }
+    
+    .containerGeralPerfil{
+      margin-top: 30px;
+    }
+    .divLoading{
+      width: 40px;
+      margin: auto;
+    }
+    .divLoading i {
+      width: 20px;
+      height: 20px;
+      color: var(--verde);
+    }
+    .divLoading p{
+      margin-left: -30px;
+      font-size: 20px;
+    }
+    body {
+    font-family: var(--fonte1);
+    }
+    .fundoLogin{
+      background-image: url(../img/fundoLogin2.jpg);
+      background-attachment: fixed;
+  
+    }
+  
+    .profile,
+    .product_recipes {
+     width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    background-color: var(--branco);
+    }
+    .profile{
+      background-color: white;
+    }
+    .product_recipes {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    }
+    .product_recipes h2{
+      margin-bottom: 20px;
+    }
+    
+  
+    .profile h1 {
+    padding-bottom: 60px;
+    font-family: var(--fonte1);
+    font-size: 40px;
+    font-style: normal;
+    color: black;
+    }
+    .profile_icone {
+    width: 500px;
+    text-align: center;
+    align-self: center;
+    }
+    .profile_icone img {
+    width: 240px;
+    }
+    .profile_dados form,
+    .card_profile2 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .profile_dados {
+    width: 500px;
+    font-size: 25px;
+    }
+    .profile_dados div{
+      margin-bottom: 40px;
+    }
+    /* Atualizações */
+  .bloco{
+    width: 500px;
+    display: flex;
+  }
+  .data_data, .info_data{
+    width: 250px;
+  }
+  
+  .profile_dados label {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte1);
+    font-size: 20px;
+    width: 300px;
+    padding-bottom: 10px;
+    }
+    .align_align{
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+    }
+    .profile_dados input,
+    textarea {
+    padding: 7px;
+    margin: 10px;
+    border: #3dca41 solid 1px;
+    border-radius: 4px;
+    }
+    textarea{
+      height: 200px;
+      width: 300px;
+    }
+    .product_recipes h3 {
+    text-align: center;
+    padding: 30px;
+    text-transform: uppercase;
+    }
+    .card_profile p, .card_profile_1 p{
+    margin-right: 10px;
+    }
+  
+    .card_profile, .card_profile_1 {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-top: 10px;
+  
+    -webkit-box-shadow: 5px 5px 30px -15px rgba(204, 204, 204, 204.75);
+    -moz-box-shadow: 5px 5px 30px -15px rgba(204, 204, 204, 204.75);
+    box-shadow: 5px 5px 30px -15px rgba(204, 204, 204, 204.75);
+    margin: auto;
+    }  
+  
+    .card_profile input,
+    select,
+    .card_profile_1 input,
+    select {
+    padding: 7px;
+    margin: 10px;
+    border: #3dca41 solid 1px;
+    border-radius: 4px;
+    }
+    .card_profile_1 input,
+    select{
+    width: 190px;
+    }
+    .card_profile_1 select{
+      width: 140px;
+    }
+
+    .imagem_incluir {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 70px;
+    }
+    .btn_incluir_imagem {
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 15px;
+    width: 30px;
+    padding: 5px;
+    background-color: var(--cinza);
+    border: none;
+    color: white;
+    }
+    .btn_incluir_imagem{
+      margin-right: 8px;
+    }
+    .btn_incluir_imagem:hover {
+    background-color: var(--verde);
+    }
+    .btn_cadastrar_produto,
+    .btn_cadastrar_receita {
+    background-color: var(--verde);
+    width: 100px;
+    }
+    .card_profile2 {
+    width: 1200px;
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 5px 5px 30px -15px rgba(204, 204, 204, 1);
+    -moz-box-shadow: 5px 5px 30px -15px rgba(204, 204, 204, 1);
+    box-shadow: 5px 5px 30px -15px rgba(204, 204, 204, 1);
+    }
+    .btn_cadastrar_produto,
+    .btn_cadastrar_receita,
+    .btn_editar_perfil {
+    margin: 30px;
+    font-size: 1.0em;
+    font-family: var(--fonte1);
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--verde);
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    }
+    .btn_cadastrar_produto:hover {
+    background-color: #37d83c;
+    }
+    .btn_editar_perfil:hover {
+    background-color: #37d83c;
+    }
+    .btn_cadastrar_receita:hover {
+    background-color: #37d83c;
+    }
+     /* Gus Table */
+    table,
+    td,
+    th {
+     border-bottom: 1px solid rgb(219, 219, 219); 
+    border-collapse: collapse;
+    padding: 8px;
+    font-family: var(--fonte1);
+    font-size: 16px;
+    background-color: rgba(214, 236, 215, 0.979);
+    color: black;
+    text-align: center;
+    }
+    th{
+      font-size: 15px;
+    }
+    
+    table th {
+    color: dimgray;
+    background-color: #dddddd;
+    font-family: var(--fonte2);
+    }
+    .editar button, .delete button {
+    background-color: white;
+    font-size: 15px;
+    border: none;
+    
+    }
+    .editar i, .delete i{
+      color: var(--verde);
+    }
+  
+  td button i {
+    margin-right: 5px;
+  }
+  
+    .editar button:hover, .delete button:hover {
+      color: red;
+    }
+    .editar {
+      background-color: white;
+      color: black;
+      height: 30px;
+    }
+   
+    .delete {
+    background-color: white;
+    color: black;
+    height: 30px;
+    }
+    table .void {
+    background-color: #9c9b9b;
+    }
+    td .verreceitas {
+    text-decoration: none;
+    color: white;
+    }
+    td a:hover {
+    color: var(--cinza);
+    }
+    /* .delete button {
+    background: none;
+    border: none;
+    color: var(--cinza);
+    margin-right: 10px;
+    } */
+    
+    .tablepager {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    }
+    #bg {
+      width: 1200px;
+      height: 100%;
+      top: 0;
+      background-color: rgba(0, 0, 0, .8);
+      position: fixed;
+      display: none;
+      }
+      #bg:target {
+      display: block;
+      }
+      
+      .box {
+      width: 500px;
+      height: 405px;
+      left: 500px;
+      border-radius: 5px;
+      }
+      
+      .box textarea {
+      width: 440px;
+      height: 150px;
+      }
+      
+      .box form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      }
+    .bg-pager {
+    background-color: var(--cinza);
+    }
+    
+    .bg-pager a {
+    text-decoration: none;
+    color: white;
+    }
+    
+    .bg-pager a:hover {
+    color: #006D03;
+    }
+    
+    .tabela_produtos {
+    display: flex;
+    justify-content: center;
+    }
+    
+    .tabela_receitas {
+    display: flex;
+    justify-content: center;
+    }
+    
+    table {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: var(--fonte1);
+    width: 60vw;
+    }
+
+    /* table end */
+  @media (max-width: 1169px) {
+    .profile_icone img{
+    display: none;
+    }
+    .banner a {
+      display: none;
+    }
+    .bannerTitle{
+      display: none;
+    }
+    .profile {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .product_recipes {
+    width: 700px;
+    }
+    .card_profile {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    }
+    .card_profile form {
+    display: flex;
+    flex-direction: column;
+    }
+  }
+  @media(max-width: 767px){
+    .profile_icone img {
+      display: none;
+      }
+      .profile {
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      }
+      .product_recipes {
+      width: 500px;
+      }
+      .card_profile {
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      }
+      .card_profile form {
+      display: flex;
+      flex-direction: column;
+      }
+    }
