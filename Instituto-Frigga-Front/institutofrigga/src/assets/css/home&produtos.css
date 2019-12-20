@@ -556,6 +556,10 @@ min-height: 280px;
    .container_mobile, .categorias_mobile, .categ_mobile{
      display: none ;
    }
+   .imgModalProduto img{
+     width: 350px;
+     height: 280px;
+   }
    /*isabella, fim */
 
    @media(max-width: 1169px){
