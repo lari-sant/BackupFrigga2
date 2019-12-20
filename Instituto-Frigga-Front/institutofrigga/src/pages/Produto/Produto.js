@@ -236,7 +236,7 @@ class Produto extends Component {
                                                 <p>Nome: {this.state.modalOferta.usuario.nome}</p>
                                                
                                                 <p>Telefone: {this.state.modalOferta.usuario.telefone}</p>
-                                                <p>Preço: {this.state.modalOferta.preco}</p>
+                                                <p>Preço: R$ {this.state.modalOferta.preco}</p>
                                                
                                             </div>
                                            

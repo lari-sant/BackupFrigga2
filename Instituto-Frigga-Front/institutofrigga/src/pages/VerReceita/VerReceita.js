@@ -33,7 +33,7 @@ class VerReceita extends Component {
 
     render(){
         return(
-        <div>
+            <div>
         <Header/>
                 
         <section className="container_geral">
@@ -96,6 +96,7 @@ class VerReceita extends Component {
         <Footer/>
 
             </div>
+   
         );
     }
 }
